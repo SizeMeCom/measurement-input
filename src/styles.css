@@ -1,8 +1,59 @@
-/* add css styles here (optional) */
-
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+.measurement-input {
+  border: 1px solid #666666;
+  border-radius: 4px;
+  background-color: #ffffff;
+  position: relative;
 }
+
+.measurement-input input {
+  display: block;
+  border: none;
+  width: calc(100% - 24px);
+  padding: 0 0 0 24px;
+  margin: 0;
+  height: 22px;
+  line-height: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.measurement-input .units {
+  display: block;
+  float: right;
+  width: 24px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.measurement-input.measurement-input-ok {
+  /*background-color: #c7eace;*/
+}
+
+.measurement-input.measurement-input-pending input {
+  font-style: italic;
+}
+
+.measurement-input.too-small {
+  border-color: #b55;
+}
+
+.measurement-input.slim {
+  border-color: #45a14c;
+}
+
+.measurement-input.regular {
+  border-color: #5fc153;
+}
+
+.measurement-input.loose {
+  border-color: #8cd98e;
+}
+
+.measurement-input.too-big {
+  border-color: #b55;
+}
+
